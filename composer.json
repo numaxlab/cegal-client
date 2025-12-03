@@ -1,0 +1,38 @@
+{
+    "name": "numaxlab/cegal-client",
+    "description": "Cliente PHP para la API de Cegal",
+    "type": "library",
+    "version": "1.0.0-beta.1",
+    "require": {
+        "php": ">=8.2",
+        "ext-libxml": "*",
+        "ext-simplexml": "*",
+        "symfony/http-client": "^7.3"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NumaxLab\\Cegal\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "NumaxLab\\Cegal\\Dto\\": "src/Dto/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adrián P. Blunier",
+            "email": "adrian@numax.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
