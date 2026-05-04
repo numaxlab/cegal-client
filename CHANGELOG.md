@@ -1,0 +1,24 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [1.0.0-beta.1] - 2025-01-01
+
+### Added
+- Initial implementation of `Client` with factory method `Client::create(username, password)`.
+- `getAvailability(isbn)` — retrieves availability from Cegal en Red associates for one or more ISBNs.
+- `getBookByIsbn(isbn)` — retrieves book information by ISBN (single or array).
+- XML response parsing via `Parser`.
+- Typed DTOs: `Availability`, `Book`, and generic `Collection`.
+- Custom exceptions: `CegalException` hierarchy for API error handling.
+- Symfony HttpClient integration with injectable `HttpClientInterface` for testability.
+- Pest test suite covering `Client` and `Dto\Collection`.
+- MIT License.
+
+[Unreleased]: https://github.com/numaxlab/cegal-client/compare/v1.0.0-beta.1...HEAD
+[1.0.0-beta.1]: https://github.com/numaxlab/cegal-client/releases/tag/v1.0.0-beta.1

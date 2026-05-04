@@ -65,7 +65,7 @@ foreach ($bookCollection as $book) {
 Para ejecutar los tests, usa el siguiente comando:
 
 ```bash
-./vendor/bin/pest
+composer test
 ```
 
 ## Licencia
